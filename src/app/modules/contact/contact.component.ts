@@ -40,7 +40,6 @@ export class ContactComponent {
 
     if(formularioValido){
       this.messageService.add({ severity: 'success', summary: 'Enhorabuena', detail: 'Formulario correcto', life: 10000 });
-      this.form2.reset();
     } else {
       this.messageService.add({ severity: 'warn', summary: 'Peligro', detail: 'Faltan campos por completar', life: 10000 });
       this.form2.markAllAsTouched();
