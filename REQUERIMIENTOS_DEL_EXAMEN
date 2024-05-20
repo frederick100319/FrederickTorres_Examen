@@ -1,0 +1,55 @@
+si da error al poner ng serve por favor con este comando npm install para instalar todos los paquetes
+1.Configuracion Inicial 
+Se creo un nuevo proyecto con "ng new examen"
+2.Estructura de componentes
+Cree una carpeta modules en la que genere los componentes con este comando
+
+ng g c modules/about
+
+ng g c modules/home
+
+ng g c modules/contact
+
+ng g c modules/posts
+
+3.Enrutamiento
+
+cree rutas con este código:
+
+  {path:'contact', component:ContactComponent},
+  {path:'home', component:HomeComponent},
+  {path:'post', component:PostsComponent},
+  {path:'about', component:AboutComponent},
+4.Navegación 
+Genere un navbar dentro de app.component html con el uso de primeng y les añadi la uncionalidad de navegabilidad con routerlink hacia las rutas anteriormente creadas
+
+5.Uso de servicios y Http 
+
+genere un servicio con este comando "ng generate service shared/post/post " dentro de la carpeta shared que previamente cree y dentro del servicio cree una apiurl para llamar a un get que va obtener datos
+
+Dentro de mi post component  llame a este servicio dentro del constructor y genere una funcion a la cual llama a estos datos para posteriormente mostrarlos dentro de una lista que llame "posts" para realizar la interpolacion entre html y el compnente y así mostrar estos datos en pantalla
+
+6.Formularios con Validación
+
+Con prime ng genere un formulario sencillo y utilice formcontrolname para obtener el formulario reactivo 
+
+Dentro de mi archivo TS cree la estructura del formulario con sus validaciones (Validators) y cree funciones para obtener el control de estas validaciones si cumple o no. En caso de no cumplir genera alertas con Toast de primeng para mostrar el campo que esta erroneo o si envio el formulario correcto muestre una alerta de logro 
+
+Anexos:
+
+Home
+
+
+
+About:
+
+
+
+Contact:
+
+
+
+
+
+Posts:
+
