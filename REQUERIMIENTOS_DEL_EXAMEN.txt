@@ -1,3 +1,4 @@
+-------------**Solo he modificado fuera de hora este archivo de texto y agregado en assets las imagenes de los anexos en caso de que no corra el proyecto**--------------------------
 si da error al poner ng serve por favor con este comando npm install para instalar todos los paquetes
 1.Configuracion Inicial 
 Se creo un nuevo proyecto con "ng new examen"
