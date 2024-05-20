@@ -1,0 +1,25 @@
+
+<div class="surface-card shadow-8 p-4 mt-5 border-round w-full lg:w-6" style="margin: 0 auto;">
+    <h1 class="text-center">Formulario</h1>
+    <form [formGroup]="form2" (ngSubmit)="validarForm()">
+        <div>
+            <label class="block mb-2" for="name">NOMBRE:</label>
+            <input type="text" formControlName="name" class="mb-2 w-full" pInputText [class]="getControlClasses('name')">
+        </div>
+        <small *ngIf="nameInvalid" class="mb-3 text-red-700"> *Nombre incorrecto</small>
+        <div>
+            <label class="block mb-2" for="email">EMAIL:</label>
+            <input type="email" formControlName="email" class="mb-2 w-full" pInputText [class]="getControlClasses('email')">
+        </div>
+        <small *ngIf="emailInvalid" class="mb-3 text-red-700"> *Email incorrecto</small>
+        <div>
+            <label class="block mb-2" for="message">MENSAJE:</label>
+                <textarea rows="5" cols="30" class="mb-2 w-full" pInputTextarea formControlName="message" [class]="getControlClasses('message')"></textarea>
+                <small *ngIf="messageInvalid" class="mb-3 text-red-700"> *Mensaje incorrecto</small>
+        </div>
+        
+        <button type="submit" class="w-full" label="Enviar" pButton></button>
+    </form>
+</div>
+<p-toast></p-toast>
+
